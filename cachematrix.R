@@ -34,3 +34,11 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
+
+#Testing data
+# b<-matrix(c(1,2,3,4),2,2)
+# b1 <-makeCacheMatrix(b)
+# cacheSolve(b1)
+#[,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
