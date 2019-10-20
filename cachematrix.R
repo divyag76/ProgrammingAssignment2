@@ -23,13 +23,13 @@
 ## Return a matrix that is the inverse of 'x' 
 ## gets the cached data if it is cached earlier otherwise computes it 
 cacheSolve <- function(x, ...) {
-        
+  ## Checking for cached data and return message or inverse   
   inv <- x$getinverse()
   if(!is.null(inv)){
-    message("getting cached data")
+    message("getting cached data") 
     return(inv)
   }
-  
+  ## compute the inverse since it is not cached
   data <- x$get()
   inv <- solve(data, ...)
   x$setinverse(inv)
