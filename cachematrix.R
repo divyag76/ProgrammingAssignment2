@@ -20,9 +20,10 @@
 
 
 ## Write a short comment describing this function
-
+## Return a matrix that is the inverse of 'x' 
+## gets the cached data if it is cached earlier otherwise computes it 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        
   inv <- x$getinverse()
   if(!is.null(inv)){
     message("getting cached data")
